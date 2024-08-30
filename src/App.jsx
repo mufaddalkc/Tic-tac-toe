@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import Player from "./components/Player";
 import GameBoard from "./components/GameBoard";
-import Log from "./components/Log";
 import GameOver from "./components/GameOver.jsx";
 import { WINNING_COMBINATIONS } from "./winning-combinations.js";
 
@@ -109,7 +108,7 @@ function App() {
         )}
         <GameBoard onSelectCell={handleSelectCell} board={gameBoard} />
       </div>
-      <Log turns={gameTurns} />
+{/*       <Log turns={gameTurns} /> */}
     </main>
   );
 }
